@@ -243,6 +243,9 @@ public class UserServiceImpl implements UserService {
             if(!currentUser.isLogged()){
                 throw new IllegalStateException("You are not logged in.");
             }
+            if(currentUser.getShoppingCart().size() == 0){
+                throw new IllegalStateException("Your shopping cart is empty.");
+            }
 
             for (int i = 0; i < currentUser.getShoppingCart().size(); i++) {
 
@@ -258,7 +261,7 @@ public class UserServiceImpl implements UserService {
 
 
             persistOrder(order);
-            System.out.printf("You successfully bought the following game - %s.%n",bd.toString());
+            System.out.println(bd.toString());
             return persistUser(currentUser);
 
         }

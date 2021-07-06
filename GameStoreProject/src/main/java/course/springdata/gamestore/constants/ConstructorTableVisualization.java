@@ -12,8 +12,8 @@ public class ConstructorTableVisualization {
                     "AllGames|<user>\n" +
                     "DetailsGame|<user>|<gameTitle>\n" +
                     "OwnedGames|<user>\n" +
-                    "AddItem|<user>|<gameTitle>\n" +
-                    "RemoveItem|<user>|<gameTitle>\n" +
-                    "BuyItem|<user>|\n" +
-                    "BuyAllItems|<user>|";
+                    "AddItem|<gameTitle>\n" +
+                    "RemoveItem|<gameTitle>\n" +
+                    "BuyItem|<gameTitle>\n" +
+                    "BuyAllItems";
 }

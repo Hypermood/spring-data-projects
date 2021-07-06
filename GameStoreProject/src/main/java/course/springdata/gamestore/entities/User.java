@@ -33,12 +33,12 @@ public class User {
     private String fullName;
     private boolean isAdministrator;
     private boolean isLogged;
-    @OneToMany(cascade = CascadeType.PERSIST)
+    @OneToMany(cascade = CascadeType.PERSIST,fetch = FetchType.EAGER)
     private List<Game> games = new ArrayList<>();
     @OneToMany(mappedBy = "user")
     private List<Order> orders = new ArrayList<>();
     @Transient
-    private List<Game> shoppingCart;
+    private List<Game> shoppingCart = new ArrayList<>();
 
     public User(@NonNull @Email String email, @NonNull @Password String password, @NonNull String fullName) {
         this.email = email;
