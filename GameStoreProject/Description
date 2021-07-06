@@ -1,0 +1,7 @@
+This console application is built with Spring framework. Its purpose is to mimic the basic services of an online shop and it supports the following functionality:
+- register and login users
+- shopping cart of each user
+- data validation regarding user and game information (usernames,emails, game titles, etc.)
+- owned games by separate users
+- two types of account - normal and admin
+- mysql database persistence 
