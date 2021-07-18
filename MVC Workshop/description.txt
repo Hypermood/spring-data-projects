@@ -1,0 +1,5 @@
+MVC Project description:
+
+- Maintains simple web application, with functionality that supports register/login of users and keeping data in MySQL database
+- The application supports production grade password encryption
+- The application has several in-built queries which can extract info from db upon demand from frontend
