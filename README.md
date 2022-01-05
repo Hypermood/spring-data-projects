@@ -1,2 +1,2 @@
 # spring-data-projects
-Projects I've done for educational purposes.
+Spring projects I've done for educational purposes.
